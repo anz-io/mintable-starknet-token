@@ -61,6 +61,8 @@ cp .env.example .env
 
 You can use your private RPC provider from [Quicknode](https://dashboard.quicknode.com/endpoints/new/STRK).
 
+---
+
 ## 2. Setup Account
 
 Starknet uses smart wallets to manage accounts, not a simple private-key pattern. You should firstly create a wallet in [Argent X Wallet](https://chromewebstore.google.com/detail/argent-x-starknet-wallet/dlcobpjiigpikoobohmabehhmhfoodbb), which is the most popular Starknet wallet. Select `Standard Account` when creating a new account.
