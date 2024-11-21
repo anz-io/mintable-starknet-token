@@ -121,7 +121,7 @@ Declare the contract by:
 
 ```bash
 source .env
-starkli declare target/dev/starknet_token_MyToken.contract_class.json
+starkli declare target/dev/starknet_token_PumpBTC.contract_class.json
 ```
 
 You will get a result like this:

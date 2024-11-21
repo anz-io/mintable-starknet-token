@@ -2,7 +2,7 @@
 // Compatible with OpenZeppelin Contracts for Cairo ^0.19.0
 
 #[starknet::contract]
-mod MyToken {
+mod PumpBTC {
     use openzeppelin::access::ownable::OwnableComponent;
     use openzeppelin::token::erc20::ERC20Component;
     use openzeppelin::token::erc20::ERC20HooksEmptyImpl;
@@ -40,7 +40,7 @@ mod MyToken {
 
     #[constructor]
     fn constructor(ref self: ContractState, owner: ContractAddress) {
-        self.erc20.initializer("MyToken", "MTK");
+        self.erc20.initializer("pumpBTC", "pumpBTC");
         self.ownable.initializer(owner);
     }
 
