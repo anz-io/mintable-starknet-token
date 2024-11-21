@@ -1,4 +1,4 @@
-# Mintalbe Starknet Token
+# Mintable Starknet Token
 
 This repository is a simple implementation of a mintable ERC20 token on Starknet using Cairo, and below is the tutorial of how to deploy this contract.
 
