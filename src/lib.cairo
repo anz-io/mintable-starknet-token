@@ -69,5 +69,11 @@ mod PumpBTC {
             self.assert_only_minter();
             self.erc20.mint(recipient, amount);
         }
+
+        #[external(v0)]
+        fn burn(ref self: ContractState, amount: u256) {
+            self.assert_only_minter();
+            self.erc20.burn(get_caller_address(), amount);
+        }
     }
 }
