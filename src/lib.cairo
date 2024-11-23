@@ -65,15 +65,15 @@ mod PumpBTC {
         }
 
         #[external(v0)]
-        fn mint(ref self: ContractState, recipient: ContractAddress, amount: u256) {
+        fn mint(ref self: ContractState, to: ContractAddress, amount: u256) {
             self.assert_only_minter();
-            self.erc20.mint(recipient, amount);
+            self.erc20.mint(to, amount);
         }
 
         #[external(v0)]
-        fn burn(ref self: ContractState, amount: u256) {
+        fn burn(ref self: ContractState, from: ContractAddress, amount: u256) {
             self.assert_only_minter();
-            self.erc20.burn(get_caller_address(), amount);
+            self.erc20.burn(from, amount);
         }
     }
 }
